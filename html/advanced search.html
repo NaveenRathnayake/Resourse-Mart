@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Advanced Search</title>
+
+<link rel = "stylesheet" type = "text/css" href  = "../styles/advancedsearch.css">
+<script src = "../js/javascript.js"></script>
+
+<script defer src = "https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> <!--social media,cart,profile icon-->
+
+</head>
+
+<body>
+
+<!--navigation bar - start-->
+<!--W3schools/youtube-->
+<nav>
+	<ul>
+		<li><img class = "logo" src = "../images/logo.jpg" alt = "logo"></li>
+		<li><a href = "Home.html">Home</a></li>
+		<li><div class = "dropdown"><a href = "Category.html">Categories</a>
+			<ul class = "dropdown-content">
+				<li><a href = "Category.html">Category01</a></li>
+				<li><a href = "Category1.html">Category02</a></li>
+				<li><a href = "Category2.html">Category03</a></li>
+				<li><a href = "#">Category04</a></li>
+			</ul>
+			</div>
+		</li>
+		<li><a class = "active" href = "advanced%20search.html">Advanced search</a></li>
+		<li><a href = "Contact%20Us.html">Contact Us</a></li>
+		<li><a href = "About%20Us.html">About Us</a></li>
+		<li><a href = "feedback.html">Feedback</a></li>
+		<li><a class = "avatar" href = "User%20Profile.html"><i class="fas fa-user"></i></a></li>
+		<li><a class = "cart" href = "cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+	</ul>
+</nav>
+<!--navigation bar - end-->
+
+<!--animated search box - start-->
+<!-- youtube - https://youtu.be/v1PeTDrw6OY -->
+	<div class = "search-box">
+		<input class = "search-txt" type = "text" name = "" placeholder = "Type to search">
+		<a class = "search-btn" href = "#" align = "center">
+		<i class="fas fa-search"></i>
+		</a>			
+	</div>
+<!--animated search box - end-->
+
+<button class = "button1"><a href = "register.html">Register</a></button>
+<button class = "button2"><a href = "signin.html">Sign In</a></button>
+		
+<section></section><!--background-->
+	
+<!--advanced search filters - start-->
+<div class = "filter-container">
+	<h1>Advance search</h1>
+	<hr>
+	
+	<table border = "0" width = "1000px">
+	<tr>
+	<th><h2>Category: </h2></th>
+	<th><div class="categorydropdown">
+	<button onclick="myFunctionCategory()" class="categorybtn">Select Category</button>  <!--W3schools-->
+	  <div id="myDropdown" class="categorydropdown-content">
+		<input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+			<a href="#">Category01</a>
+			<a href="#">Category02</a>
+			<a href="#">Category03</a>
+			<a href="#">Category04</a>
+			<a href="#">Category05</a>
+			<a href="#">Category06</a>
+			<a href="#">Category07</a>
+	  </div>
+	</div></th>
+	
+	
+	<th><h2>City: </h2></th>
+	<th><div class="citydropdown">
+	<button onclick="myFunctionCity()" class="citybtn">Select City</button>  <!--W3schools-->
+	  <div id="myDropdowncity" class="citydropdown-content">
+		<input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunctionCity()">
+			<a href="#">City01</a>
+			<a href="#">City02</a>
+			<a href="#">City03</a>
+			<a href="#">City04</a>
+			<a href="#">City05</a>
+			<a href="#">City06</a>
+			<a href="#">City07</a>
+	  </div>
+	 </div></th>
+	 
+	 <th><h2>Booking Date: </h2></th>
+	  <th>  <!-- https://codepen.io/maheshambure21/pen/VYJQYG -->
+		<input type="date" id="start" name="trip-start" class = "calander" value="2020-10-01" min="2020-01-01" max="2020-12-31">
+	  </th>
+	</tr>
+	</table>
+	
+	 
+	<table border = "0">
+	  <th><h2>Ratings:</h2></th>  <!-- https://css-tricks.com/star-ratings/ -->
+	  <th>
+		<div class="rating">
+			<span>☆</span>
+			<span>☆</span>
+			<span>☆</span>
+			<span>☆</span>
+			<span>☆</span>
+		</div>
+	   </th>
+	 </table>
+	 
+	<table border = "0">
+	<th><div class="slidecontainer">
+  <input type="range" min="0" max="20000" value="10000" class="slider" id="myRange">  <!--W3schools-->
+	</div>
+	</th>
+	<th><h2>Price range: Rs.<span id="demo"></span>/=</h2></th>
+	</table>
+	
+	<script>
+		var slider = document.getElementById("myRange");
+		var output = document.getElementById("demo");
+		output.innerHTML = slider.value;
+
+		slider.oninput = function() {
+		output.innerHTML = this.value;
+}
+	</script>
+	
+	<table border = "0">
+	<th><button class = "button3">SEARCH</button></th>
+	</table>
+	<hr>	 
+</div>
+<!--advanced search filters - end-->
+
+<!--chat box - start-->
+<!--W3schools-->
+<button class="chat-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<!--chat box - end-->
+
+<footer>
+<!--youtube - https://youtu.be/lnzfyGaoioU -->
+<div class = "footer-container">
+	<div class = "left.col">
+		<img class = "logo" src = "../images/logo.jpg" alt = "logo">
+		<div class = "social-media">
+		<a href = "#"><i class = "fab fa-facebook-f"></i></a>
+		<a href = "#"><i class = "fab fa-twitter"></i></a>
+		<a href = "#"><i class = "fab fa-instagram"></i></a>
+		<a href = "#"><i class = "fab fa-whatsapp"></i></a>
+		</div>
+		<p class = "rights-text">2020 Created by MLB_PG.07.01_11 All rights reserved</p>
+	</div>
+	<div class = "right-col">
+	<h1>Our Newsletter</h1>
+	<div class = "border"></div>
+	<p>Enter your Email to get our news and updates.</p>
+	<form action = "" class = "newsletter-form">
+	<input type = "text" class = "txtb" placeholder = "Enter Your Email">
+	<input type = "submit" class = "btn" value = "Submit">
+	</form>
+	</div>
+</div>
+</footer>
+
+</body>
+</html>

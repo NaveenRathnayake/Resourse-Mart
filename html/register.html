@@ -1,0 +1,70 @@
+<html>
+<head><title>Register</title>
+<link rel="stylesheet" href="../styles/reg-login.css">
+</head>
+<body>
+<div class = "form">
+	<div class = "tab-header">
+		<div class = "active">Register</div>
+		<div>SignIn</div>
+	</div>
+	<div class = "tab-content">
+		<div class = "tab-body active">
+			<div class = "form-element">
+				<input type = "text" placeholder = "Customer name">
+			</div>
+			<div class = "form-element">
+				<input type = "text" placeholder = "Customer E-mail">
+			</div>
+			<div class = "form-element">
+				<input type = "text" placeholder = "User-name">
+			</div>
+			<div class = "form-element">
+				<input type = "password" placeholder = "Password">
+			</div>
+			<div class = "form-element">
+				<button>Register</button>
+			</div><div class = "form-element"><a href = "vendor%20register.html">
+				<button>Register as Vendor</button>
+			</div></a>
+	</div>
+		<div class = "tab-body">
+			<div class = "form-element">
+				<input type = "text" placeholder = "User-name">
+			</div>
+			<div class = "form-element">
+				<input type = "text" placeholder = "Password">
+			</div>
+			<div class = "form-element">
+				<button>SignIn</button>
+			</div>
+</div>
+</div>
+
+<script>
+	let tab = document.getElementsByClassName("tab-header")[0].getElementsByTagName("div");
+
+for(let i=0;i<tab.length;i++){
+	tab[i].addEventListener("click",function(){
+		document.getElementsByClassName("tab-header")
+			[0].getElementsByClassName("active")
+			[0].classList.remove("active");
+		tab[i].classList.add("active");
+			
+		document.getElementsByClassName("tab-content")
+			[0].getElementsByClassName("active")
+			[0].classList.remove("active");
+		document.getElementsByClassName("tab-content")
+			[0].getElementsByClassName("tab-body")
+			[i].classList.add("active");
+		});
+}
+</script>
+</body>
+</html>
+
+
+<!--<?php
+mysql_connect("localhost", "root", "") or die (mysql_error());
+mysql_select_db('registration') or die (mysql_error());
+?>-->

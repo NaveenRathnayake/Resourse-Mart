@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<meta charset = "utf-8">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Professional profile</title>
+	<link rel="stylesheet" type="text/css" href="../styles/Profile.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel = "stylesheet" type = "text/css" href  = "../styles/userprofile.css">
+	<script defer src = "https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+<body>
+      
+<div>
+	<nav>
+		<ul>
+		<li><img class = "logo" src = "../images/logo.jpg" alt = "logo"></li>
+		<li><a href = "Home.html">Home</a></li>
+		<li><div class = "dropdown"><a href = "Category.html">Categories</a>
+			<ul class = "dropdown-content">
+				<li><a href = "Category.html">Category01</a></li>
+				<li><a href = "Category1.html">Category02</a></li>
+				<li><a href = "Category2.html">Category03</a></li>
+				<li><a href = "#">Category04</a></li>
+			</ul>
+		</li>
+		<li><a href = "advanced%20search.html">Advanced search</a></li>
+		<li><a href = "Contact%20Us.html">Contact Us</a></li>
+		<li><a href = "About%20Us.html">About Us</a></li>
+		<li><a href = "feedback.html">Feedback</a></li><br>
+		<li><a class = "cart" href = "cart.html"><i class="fas fa-shopping-cart"></i></a></li
+		</ul>
+	</nav>
+	<div class = "search-box">
+		<input class = "search-txt" type = "text" name = "" placeholder = "Type to search">
+		<a class = "search-btn" href = "#" align = "center">
+		<i class="fas fa-search"></i>
+		</a>			
+	</div>
+		<button class = "button1">Sign out</button>
+	
+</div><section></section>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<div class="profile-main">
+		<div class="profile-header">
+			<div class="user-detail">
+				<div class="user-image">
+					<img src="../images/photo.jpg">
+				</div>
+				<div class="user-data">
+					<h2>Smith Alexander</h2>
+					<span class="post-label">Admin</span>
+					<span class="post-label">Speaker</span>
+					<span class="post-label">updater</span>
+					<p><b>2115  Stoneybrook Road </b><strong>NewSpot</strong><br>
+					
+					<!--https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-map-marker-->
+					<i class="fa fa-map-marker" aria-hidden="true"></i>  Boston, MA, United States
+					</p>
+				</div>
+				
+				<!--https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css-->
+				<div class="social-icons">
+					<i class="fa fa-facebook"></i>
+					<i class="fa fa-twitter"></i>
+					<i class="fa fa-linkedin"></i>
+					<i class="fa fa-google"></i>
+					<i class="fa fa-instagram"></i>
+					<a href="#" type="button" class="msg-btn"><i class="fa fa-envelope-o" aria-hidden="true"></i>Send Message</a>
+				    <a href="#" type="button" ></i>Update profile</a>
+				</div>
+			</div>
+			
+			     <!--https://forum.freecodecamp.org/t/explain-nested-class/278868-->
+					<div class="bio-box">
+						<div class="heading">
+							<p>Professional Bio</p>
+							
+						</div>
+						<div class="desc">
+							Ryan — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music.
+							Solution Manager - Creative Tim Officer
+                            University of Computer Science 
+						</div>
+					</div>
+					
+					<div class="detail-box">
+						<p>Detail</p>
+						<ul class="ul-first">
+							<li>Birth date</li>
+							<li>City</li>
+							<li>Country</li>
+							<li>Contact No</li>
+						</ul>
+						<ul class="ul-second">
+							<li>8 March 1997</li>
+							<li>Jamanagar</li>
+							<li>California</li>
+							<li>9900990087</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div id="Edu-detail" class="tab-content">
+					<div class="Edu-box-main">
+					<!--https://fontawesome.com/v4.7.0/icon/graduation-cap-->
+						 <h2><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h2>
+						 <div class="Edu-box">
+						 	<h5><span>Graphic designer</span> <br>
+						 		2005 - 2007 | Infoway Corporation</h5>
+						 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						 </div>
+						 <div class="Edu-box">
+						 	<h5><span>Web designer</span> <br>
+						 		2007 - 2009 | Light Corporation</h5>
+						 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						 </div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+	</div>
+	<br><br><br><br><br><br><br><br>
+	<!--This js code not written by me.Its use to create tabs in my page.-->
+<script type="../text/javascript">
+	$(document).ready(function(){
+		$('ul.tabs li').click(function(){
+			var tab_id = $(this).attr('data-tab');
+
+			$('ul.tabs li').removeClass('current');
+			$('.tab-content').removeClass('current');
+
+			$(this).addClass('current');
+			$("#"+tab_id).addClass('current');
+		});
+	});
+</script>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<footer>
+<div class = "footer-container">
+	<div class = "left.col">
+		<img class = "logo" src = "../images/logo.jpg" alt = "logo">
+		<div class = "social-media">
+		<a href = "#"><i class = "fab fa-facebook-f"></i></a>
+		<a href = "#"><i class = "fab fa-twitter"></i></a>
+		<a href = "#"><i class = "fab fa-instagram"></i></a>
+		<a href = "#"><i class = "fab fa-whatsapp"></i></a>
+		</div>
+		<p class = "rights-text">2020 Created by MLB_PG.07.01_11 All rights reserved</p>
+	</div>
+	<div class = "right-col">
+	<h1>Our Newsletter</h1>
+	<div class = "border"></div>
+	<p>Enter your Email to get our news and updates.</p>
+	<form action = "" class = "newsletter-form">
+	<input type = "text" class = "txtb" placeholder = "Enter Your Email">
+	<input type = "submit" class = "btn" value = "Submit">
+	</form>
+	</div>
+</div>
+</footer>	
+
+</body>
+</html>

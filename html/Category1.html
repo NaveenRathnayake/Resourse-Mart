@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<meta charset = "utf-8">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Party Items</title>
+	
+	<link rel = "stylesheet" type = "text/css" href  = "../styles/cat.css">
+	<link rel = "stylesheet" type = "text/css" href  = "../styles/Category.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	<!--To get the icons--> 
+	<link href='https://fonts.googleapis.com/css?family=Adamina' rel='stylesheet'>	<!--To get the font-->
+	
+	<script defer src = "https://use.fontawesome.com/releases/v5.0.6/js/all.js"> </script>	<!--To get the icons--> 
+	<script type = "text/javascript" src = "../js/myJavaScript.js"></script>
+	<script src = "../js/category.js"></script>
+	
+</head>
+
+<body>
+
+	<div class = "header">
+			<img class = "logoH" src = "../images/logo.jpg" alt = "logo">
+		<nav>
+			<ul id = "hdrLinks">
+			<li><a href = "Home.html">Home</a></li>
+			<li><div class = "dropdown"><a href = "Category.html">Categories</a>
+				<ul class = "dropdown-content">
+					<li><a href = "Category.html">Office_items</a></li>
+					<li><a href = "Category1.html">Party_items</a></li>
+					<li><a href = "Category2.html">Educational_items</a></li>
+				</ul></li>
+			
+			<li><a href = "advanced%20search.html">Advanced search</a></li>
+			<li><a href = "Contact%20Us.html">Contact Us</a></li>
+			<li><a href = "About%20Us.html">About Us</a></li>
+			<li><a href = "feedback.html">Feedback</a></li>
+			</ul>
+			<a href="javascript:void(0);" class="icn" id = "icn" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</nav>
+		
+		<div class = "button">
+			<a href = "register.html"><button class = "button1" >Register</button></a>
+			<a href = "signin.html"><button class = "button2">SignIn</button></a>
+			
+			<div style = "list-style: none; display:inline-block; position: relative; float:right;">
+				<a class = "avatar" href = "User%20Profile.html"><i class="fas fa-user"></i></a>
+				<br><br><br><br>
+				<a class = "cart" href = "cart.html"><i class="fas fa-shopping-cart"></i></a>
+			</div>
+			<br><br><br><br>
+			<div style = "float:right;"class =  "search-box">
+				<input class = "search-txt" type = "text" name = "" placeholder = "Type to search">
+				<a class = "search-btn" href = "#" align = "center">
+				<i class="fas fa-search"></i>
+				</a>			
+			</div>		
+		
+		</div>
+		
+
+		
+	</div>
+	
+	
+	<div class="sidebar">
+	  <a href="Category.html">Office Items</a>
+	  <a class="active" href="Category1.html">Party Items</a>
+	  <a href="Category2.html">Educational Items</a>
+	</div>
+
+	<div  class="content">
+		<h2>Party Items</h2>
+		<p>____________________</p>
+	  
+		<div id="bttnContainer">
+		  <button class="bttn" onclick="listView()"><i class="fa fa-bars"></i> List</button> 
+		  <button class="bttn" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+		</div>
+		<br>
+
+		<div class="row">
+		  <div class="column" style="background-color:#F0F8FF; border-width: 1px; border-color: #aaa;">
+			<p>
+				<div class="card"><a href = "Selected%20product.html">
+				  <img src="../images/img7.jpg" alt="Image not found" title = "Click for more details" width = "200px" height = "120px">
+				  <h3>Table with chairs</h3>
+				  <p class="price">Rs.xxxx.xx</p>
+				  <p style = "font-size: 10px; color:black;">Table with chairs- pink, blue and white</p></a>
+				  <p><button>Add to Cart</button></p>
+				</div>
+			</p>
+			
+		  </div>
+		  <div class="column" style="background-color:#FFFFFF; border-color: #aaa;">
+			<p>
+				<div class="card"><a href = "Selected%20product.html">
+				  <img src="../images/img8.jpg" alt="Image not found" title = "Click for more details" width = "200px" height = "120px">
+				  <h3>Table with chairs</h3>
+				  <p class="price">Rs.xxxx.xx</p>
+				  <p style = "font-size: 9.7px; color:black;">White and silver mixed decorations</p></a>
+				  <p><button>Add to Cart</button></p>
+				</div>			
+			</p>			
+		  </div>
+		</div>
+
+		<div class="row">
+		  <div class="column" style="background-color:#FFFFFF; border-color: #aaa;">
+			<p>
+				<div class="card"><a href = "Selected%20product.html">
+				  <img src="../images/img9.jpg" alt="Image not found" title = "Click for more details" width = "200px" height = "120px">
+				  <h3>Tables with chairs</h3>
+				  <p class="price">Rs.xxxx.xx</p>
+				  <p style = "font-size: 10px; color:black;">Tables with yellow colour decorations for children</p></a>
+				  <p><button>Add to Cart</button></p>
+				</div>			
+			</p>
+			
+		  </div>
+		  <div class="column" style="background-color:#F0F8FF; border-color: #aaa;">
+			<p>
+				<div class="card"><a href = "Selected%20product.html">
+				  <img src="../images/img10.jpg" alt="Image not found" title = "Click for more details" width = "200px" height = "120px">
+				  <h3>Table set</h3>
+				  <p class="price">Rs.xxxx.xx</p>
+				  <p style = "font-size: 10px; color:black;">An outdoor set</p></a>
+				  <p><button>Add to Cart</button></p>
+				</div>			
+			</p>
+			
+		  </div>
+		</div>
+
+		<div class="row">
+		  <div class="column" style="background-color:#F0F8FF; border-color: #aaa;">
+			<p>
+				<div class="card"><a href = "Selected%20product.html">
+				  <img src="../images/img11.jpg" alt="Image not found" title = "Click for more details" width = "200px" height = "120px">
+				  <h3>Decorations</h3>
+				  <p class="price">Rs.xxxx.xx</p>
+				  <p style = "font-size: 10px; color:black;">Pink and white color Birthday decorations</p></a>
+				  <p><button>Add to Cart</button></p>
+				</div>			
+			</p>
+
+		  </div>
+		  <div class="column" style="background-color:#FFFFFF; border-color: #aaa;">
+			<p>
+				<div class="card"><a href = "Selected%20product.html">
+				  <img src="../images/img12.jpg" alt="Image not found" title = "Click for more details" width = "200px" height = "120px">
+				  <h3>Tent</h3>
+				  <p class="price">Rs.xxxx.xx</p>
+				  <p style = "font-size: 10px; color:black;">Transparent tent with white color decorations</p></a>
+				  <p><button>Add to Cart</button></p>
+				</div>			
+			</p>
+			
+		  </div>
+		</div>	  
+
+	</div>	
+
+	<footer>
+	<div class = "footer-container">
+		<div class = "left.col"><a href = "Selected%20product.html">
+			<img class = "logo" src = "../images/logo.jpg" alt = "logo">
+			<div class = "social-media">
+			<a href = "www.facebook.com"><i class = "fab fa-facebook-f"></i></a>
+			<a href = "#"><i class = "fab fa-twitter"></i></a>
+			<a href = "www.instagram.com"><i class = "fab fa-instagram"></i></a>
+			<a href = "#"><i class = "fab fa-whatsapp"></i></a>
+		</div>
+	
+		<p class = "rights-text">2020 Created by MLB_PG.07.01_11 All rights reserved</p>
+		</div>
+	
+		<div class = "right-col">
+			<h1>Our Newsletter</h1>
+			<div class = "border"></div>
+				<p>Enter your Email to get our news and updates.</p>
+			
+				<form action = "" class = "newsletter-form">
+				<input type = "text" class = "txtb" placeholder = "Enter Your Email">
+				<input type = "submit" class = "btn" value = "Submit">
+				</form>
+		</div>
+	</div>
+	</footer>		
+</body>
+</html>

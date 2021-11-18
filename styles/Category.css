@@ -1,0 +1,146 @@
+/*Office items category*/
+ 
+ /*style the side bar*/
+ .sidebar {
+  margin-top: 15px;
+  padding: 0;
+  width: 200px;
+  background-color: #F0F8FF;
+  position: absolute;
+  height: cover;
+  border: 1px solid white;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #6495ED;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+
+/*style Other content of the category page including pictures and descriptions*/
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: cover;
+}
+
+@mediascreen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@mediascreen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  border-right: 1px solid;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  height: 2px;
+}
+
+/* Style the buttons */
+.bttn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #F0F8FF;
+  cursor: pointer;
+  color: black;
+}
+
+.bttn:hover {
+  background-color: #ddd;
+}
+
+.bttn.active {
+  background-color: #666;
+  color: white;
+}
+
+
+
+/*style the Product card*/ 
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.card:hover {
+  opacity: 0.7;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #191970;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
